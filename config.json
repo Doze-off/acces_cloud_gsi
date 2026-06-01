@@ -1,19 +1,13 @@
 {
   "site": {
     "title": {
-      "pt-BR": "Acess Cloud GSI",
-      "en": "Acess Cloud GSI"
+      "pt-BR": "Minhas Builds",
+      "en": "My Builds"
     },
     "description": {
-      "pt-BR": "Todas as minhas builds e modulos",
-      "en": "All my builds and modules"
+      "pt-BR": "Todas as minhas builds de jogos e projetos",
+      "en": "All my game builds and projects"
     }
-  },
-  "github": {
-    "owner": "Doze-off",
-    "repo": "https://github.com/Doze-off/acces_cloud_gsi",
-    "branch": "16",
-    "dataPath": "data.json"
   },
   "builds": [
     {
@@ -23,12 +17,12 @@
         "en": "Alpha Build v1.0"
       },
       "description": {
-        "pt-BR": "Minha primeira build experimental com recursos básicos",
-        "en": "My first experimental build with basic features"
+        "pt-BR": "Build experimental com recursos básicos",
+        "en": "Experimental build with basic features"
       },
       "version": "1.0.0",
       "date": "2026-05-15",
-      "download_url": "#",
+      "download_url": "https://example.com/build1.zip",
       "image": "images/build1.jpg"
     },
     {
@@ -38,12 +32,12 @@
         "en": "Beta Build v2.0"
       },
       "description": {
-        "pt-BR": "Build beta com novos recursos e melhorias de performance",
-        "en": "Beta build with new features and performance improvements"
+        "pt-BR": "Build beta com melhorias de performance",
+        "en": "Beta build with performance improvements"
       },
       "version": "2.0.0",
       "date": "2026-05-25",
-      "download_url": "#",
+      "download_url": "https://example.com/build2.zip",
       "image": "images/build2.jpg"
     }
   ],
@@ -55,21 +49,19 @@
         "en": "Optimization Module"
       },
       "description": {
-        "pt-BR": "Melhora a performance do jogo em 40% com shaders otimizados",
-        "en": "Improves game performance by 40% with optimized shaders"
+        "pt-BR": "Melhora a performance do jogo",
+        "en": "Improves game performance"
       },
       "version": "1.0.0",
       "date": "2026-05-20",
-      "download_url": "#",
+      "download_url": "https://example.com/module1.zip",
       "image": "images/modulos/modulo1.jpg",
       "tags": {
         "pt-BR": [
-          "Performance",
-          "Shaders"
+          "Performance"
         ],
         "en": [
-          "Performance",
-          "Shaders"
+          "Performance"
         ]
       }
     },
@@ -80,12 +72,12 @@
         "en": "4K Textures Module"
       },
       "description": {
-        "pt-BR": "Texturas ultra-realistas em 4K para gráficos incríveis",
-        "en": "Ultra-realistic 4K textures for amazing graphics"
+        "pt-BR": "Texturas ultra-realistas em 4K",
+        "en": "Ultra-realistic 4K textures"
       },
       "version": "2.0.0",
       "date": "2026-05-28",
-      "download_url": "#",
+      "download_url": "https://example.com/module2.zip",
       "image": "images/modulos/modulo2.jpg",
       "tags": {
         "pt-BR": [
@@ -102,8 +94,8 @@
   "team": [
     {
       "name": {
-        "pt-BR": "Doze-off",
-        "en": "Doze-off"
+        "pt-BR": "Vinicius Sad",
+        "en": "Vinicius Sad"
       },
       "role": {
         "pt-BR": "Desenvolvedor Principal",
@@ -111,20 +103,11 @@
       },
       "avatar": "images/team/vinicius.jpg",
       "social": {
-        "github": "https://github.com/Doze-of",
-        "twitter": ""
+        "github": "https://github.com/SEU_USUARIO"
       }
     }
   ],
   "donation": {
-    "title": {
-      "pt-BR": "Apoie o Projeto",
-      "en": "Support the Project"
-    },
-    "description": {
-      "pt-BR": "Se você gosta do meu trabalho, considere fazer uma doação para ajudar no desenvolvimento contínuo!",
-      "en": "If you like my work, consider donating to help with continuous development!"
-    },
     "methods": [
       {
         "name": "Pix",
@@ -135,20 +118,12 @@
     ]
   },
   "support": {
-    "title": {
-      "pt-BR": "Grupo de Suporte",
-      "en": "Support Group"
-    },
-    "description": {
-      "pt-BR": "Junte-se ao nosso grupo de suporte para tirar dúvidas, compartilhar feedback e conversar com outros usuários",
-      "en": "Join our support group to ask questions, share feedback, and chat with other users"
-    },
     "discord": "https://discord.gg/seu-codigo"
   },
-  "footer": {
-    "text": {
-      "pt-BR": "Feito com ❤️ por Doze-of | 2026",
-      "en": "Made with ❤️ by Doze-of | 2026"
-    }
+  "github": {
+    "owner": "SEU_USUARIO",
+    "repo": "SEU_REPOSITORIO",
+    "branch": "main",
+    "dataPath": "data.json"
   }
 }
