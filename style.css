@@ -964,3 +964,5 @@ html {
     color: var(--purple-light);
     font-size: 1.15rem;
 }
+
+.api-status{margin-top:18px;text-align:center;color:var(--text-secondary);font-size:.95rem}

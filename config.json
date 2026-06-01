@@ -9,6 +9,12 @@
       "en": "All my game builds and projects"
     }
   },
+  "github": {
+    "owner": "SEU_USUARIO",
+    "repo": "SEU_REPOSITORIO",
+    "branch": "main",
+    "dataPath": "data.json"
+  },
   "builds": [
     {
       "id": 1,
@@ -22,9 +28,8 @@
       },
       "version": "1.0.0",
       "date": "2026-05-15",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/v1.0/build.zip",
-      "image": "images/build1.jpg",
-      "downloads": 0
+      "download_url": "#",
+      "image": "images/build1.jpg"
     },
     {
       "id": 2,
@@ -38,9 +43,8 @@
       },
       "version": "2.0.0",
       "date": "2026-05-25",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/v2.0/build.zip",
-      "image": "images/build2.jpg",
-      "downloads": 0
+      "download_url": "#",
+      "image": "images/build2.jpg"
     }
   ],
   "modulos": [
@@ -56,9 +60,8 @@
       },
       "version": "1.0.0",
       "date": "2026-05-20",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/module1/optimization.zip",
+      "download_url": "#",
       "image": "images/modulos/modulo1.jpg",
-      "downloads": 0,
       "tags": {
         "pt-BR": [
           "Performance",
@@ -82,9 +85,8 @@
       },
       "version": "2.0.0",
       "date": "2026-05-28",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/module2/textures4k.zip",
+      "download_url": "#",
       "image": "images/modulos/modulo2.jpg",
-      "downloads": 0,
       "tags": {
         "pt-BR": [
           "Gráficos",
@@ -93,32 +95,6 @@
         "en": [
           "Graphics",
           "4K"
-        ]
-      }
-    },
-    {
-      "id": 3,
-      "name": {
-        "pt-BR": "Módulo de Sons Surround",
-        "en": "Surround Sound Module"
-      },
-      "description": {
-        "pt-BR": "Áudio surround 7.1 imersivo para experiência completa",
-        "en": "Immersive 7.1 surround audio for complete experience"
-      },
-      "version": "1.5.0",
-      "date": "2026-05-30",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/module3/sounds.zip",
-      "image": "images/modulos/modulo3.jpg",
-      "downloads": 0,
-      "tags": {
-        "pt-BR": [
-          "Áudio",
-          "Surround"
-        ],
-        "en": [
-          "Audio",
-          "Surround"
         ]
       }
     }
@@ -135,22 +111,7 @@
       },
       "avatar": "images/team/vinicius.jpg",
       "social": {
-        "github": "https://github.com/seu-usuario",
-        "twitter": "https://twitter.com/seu-usuario"
-      }
-    },
-    {
-      "name": {
-        "pt-BR": "Colaborador 2",
-        "en": "Contributor 2"
-      },
-      "role": {
-        "pt-BR": "Designer",
-        "en": "Designer"
-      },
-      "avatar": "images/team/member2.jpg",
-      "social": {
-        "github": "https://github.com/usuario2",
+        "github": "https://github.com/SEU_USUARIO",
         "twitter": ""
       }
     }
@@ -161,7 +122,7 @@
       "en": "Support the Project"
     },
     "description": {
-      "pt-BR": "Se você gosta do meu trabalho, considere fazer uma doacao para ajudar no desenvolvimento contnuo!",
+      "pt-BR": "Se você gosta do meu trabalho, considere fazer uma doação para ajudar no desenvolvimento contínuo!",
       "en": "If you like my work, consider donating to help with continuous development!"
     },
     "methods": [
@@ -170,20 +131,6 @@
         "pt-BR": "Chave Pix: seu-email@exemplo.com",
         "en": "Pix Key: your-email@example.com",
         "icon": "pix"
-      },
-      {
-        "name": "PayPal",
-        "pt-BR": "Doar via PayPal",
-        "en": "Donate via PayPal",
-        "url": "https://paypal.me/seu-usuario",
-        "icon": "paypal"
-      },
-      {
-        "name": "Catarse",
-        "pt-BR": "Catarse",
-        "en": "Catarse",
-        "url": "https://catarse.me/seu-projeto",
-        "icon": "catarse"
       }
     ]
   },
@@ -193,21 +140,15 @@
       "en": "Support Group"
     },
     "description": {
-      "pt-BR": "Junte-se ao nosso grupo de suporte para tirar duvidas, compartilhar feedback e conversar com outros usuarios",
+      "pt-BR": "Junte-se ao nosso grupo de suporte para tirar dúvidas, compartilhar feedback e conversar com outros usuários",
       "en": "Join our support group to ask questions, share feedback, and chat with other users"
     },
-    "discord": "https://discord.gg/seu-codigo",
-    "telegram": "https://t.me/seu-grupo",
-    "whatsapp": "https://chat.whatsapp.com/seu-codigo"
+    "discord": "https://discord.gg/seu-codigo"
   },
   "footer": {
     "text": {
       "pt-BR": "Feito com ❤️ por Vinicius Sad | 2026",
       "en": "Made with ❤️ by Vinicius Sad | 2026"
     }
-  },
-  "downloads": {
-    "total": 0,
-    "lastUpdated": "2026-05-31T22:10:00Z"
   }
 }

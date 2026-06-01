@@ -1,119 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Minhas Builds - Todas as minhas builds de jogos e projetos">
-    <title>Minhas Builds</title>
-
-    <!-- Fontes Google Modernas -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Minhas Builds - Builds, módulos, equipe, doações e suporte" />
+  <title>Minhas Builds</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-    <!-- Cursor Glow Effect -->
-    <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header-content">
-                <h1 id="site-title">Minhas Builds</h1>
-                <button id="lang-toggle" class="lang-btn">
-                    <i class="fas fa-globe"></i>
-                    <span id="lang-text">English</span>
-                </button>
-            </div>
-        </div>
-    </header>
+  <header class="header" id="header">
+    <div class="container header-content">
+      <h1 id="site-title">Minhas Builds</h1>
+      <button id="lang-toggle" class="lang-btn"><i class="fas fa-globe"></i><span id="lang-text">English</span></button>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h2 id="hero-title">Todas as minhas builds de jogos e projetos</h2>
-            <p id="hero-subtitle">Encontre aqui todas as versões disponíveis para download</p>
-            <div class="total-downloads">
-                <i class="fas fa-download"></i>
-                <span id="total-downloads-count">0</span>
-                <span id="total-downloads-text">downloads totais</span>
-            </div>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="container">
+      <h2 id="hero-title">Todas as minhas builds de jogos e projetos</h2>
+      <p id="hero-subtitle">Encontre aqui todas as versões disponíveis para download</p>
+      <div class="total-downloads">
+        <i class="fas fa-download"></i>
+        <span id="total-downloads-count">0</span>
+        <span id="total-downloads-text">downloads totais</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- Builds Section -->
-    <section class="builds-section">
-        <div class="container">
-            <h2 class="section-title" id="builds-title">Builds Disponíveis</h2>
-            <div id="builds-container" class="builds-grid">
-                <!-- Builds serão carregadas via JavaScript -->
-            </div>
-        </div>
-    </section>
+  <section class="builds-section">
+    <div class="container">
+      <h2 class="section-title" id="builds-title">Builds Disponíveis</h2>
+      <div id="builds-container" class="builds-grid"></div>
+    </div>
+  </section>
 
-    <!-- Modules Section (NOVA) -->
-    <section class="modules-section">
-        <div class="container">
-            <h2 class="section-title" id="modules-title">Módulos</h2>
-            <p id="modules-description" class="section-description">
-                Módulos personalizados para expandir e melhorar suas builds
-            </p>
-            <div id="modules-container" class="modules-grid">
-                <!-- Módulos serão carregados via JavaScript -->
-            </div>
-        </div>
-    </section>
+  <section class="modules-section">
+    <div class="container">
+      <h2 class="section-title" id="modules-title">Módulos</h2>
+      <p id="modules-description" class="section-description">Módulos personalizados para expandir e melhorar suas builds</p>
+      <div id="modules-container" class="modules-grid"></div>
+    </div>
+  </section>
 
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <h2 class="section-title" id="team-title">Equipe</h2>
-            <div id="team-container" class="team-grid">
-                <!-- Equipe será carregada via JavaScript -->
-            </div>
-        </div>
-    </section>
+  <section class="team-section">
+    <div class="container">
+      <h2 class="section-title" id="team-title">Equipe</h2>
+      <div id="team-container" class="team-grid"></div>
+    </div>
+  </section>
 
-    <!-- Donation Section -->
-    <section class="donation-section">
-        <div class="container">
-            <h2 class="section-title" id="donation-title">Apoie o Projeto</h2>
-            <p id="donation-description" class="donation-description">
-                Se você gosta do meu trabalho, considere fazer uma doação para ajudar no desenvolvimento contínuo!
-            </p>
-            <div id="donation-container" class="donation-methods">
-                <!-- Métodos de doação serão carregados via JavaScript -->
-            </div>
-        </div>
-    </section>
+  <section class="donation-section">
+    <div class="container">
+      <h2 class="section-title" id="donation-title">Apoie o Projeto</h2>
+      <p id="donation-description" class="donation-description">Se você gosta do meu trabalho, considere fazer uma doação para ajudar no desenvolvimento contínuo!</p>
+      <div id="donation-container" class="donation-methods"></div>
+    </div>
+  </section>
 
-    <!-- Support Section -->
-    <section class="support-section">
-        <div class="container">
-            <h2 class="section-title" id="support-title">Grupo de Suporte</h2>
-            <p id="support-description" class="support-description">
-                Junte-se ao nosso grupo de suporte para tirar dúvidas, compartilhar feedback e conversar com outros usuários
-            </p>
-            <div id="support-container" class="support-links">
-                <!-- Links de suporte serão carregados via JavaScript -->
-            </div>
-        </div>
-    </section>
+  <section class="support-section">
+    <div class="container">
+      <h2 class="section-title" id="support-title">Grupo de Suporte</h2>
+      <p id="support-description" class="support-description">Junte-se ao nosso grupo de suporte para tirar dúvidas, compartilhar feedback e conversar com outros usuários</p>
+      <div id="support-container" class="support-links"></div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p id="footer-text">Feito com <span>❤️</span> por <span>Vinicius Sad</span> | 2026</p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="container"><p id="footer-text">Feito com <span>❤️</span> por <span>Vinicius Sad</span> | 2026</p></div>
+  </footer>
 
-    <script src="config.json"></script>
-    <script src="script.js"></script>
+  <script src="config.json"></script>
+  <script src="api.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
