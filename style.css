@@ -9,3 +9,24 @@
 .build-content p, .module-content p { text-align: left; }
 .team-member h3, .team-role { text-align: center; }
 .donation-method h4, .support-link { justify-content: center; }
+
+
+html, body { min-height: 100%; }
+body { font-size: 18px; line-height: 1.7; }
+.header h1 { font-size: clamp(1.8rem, 2.5vw, 2.6rem); }
+.lang-btn, .download-btn { font-size: 1rem; padding: 12px 22px; }
+.hero h2 { line-height: 1.05; }
+.hero p, .section-description, .donation-description, .support-description { font-size: 1.08rem; line-height: 1.8; }
+.section-title { line-height: 1.1; }
+.build-card h3, .module-card h3 { font-size: 1.5rem; line-height: 1.15; }
+.build-version { font-size: .9rem; }
+.build-date, .module-downloads { font-size: 1rem; }
+.team-member h3 { font-size: 1.35rem; }
+.team-role { font-size: 1.05rem; }
+.team-social a { width: 48px; height: 48px; font-size: 1.2rem; display:flex; align-items:center; justify-content:center; }
+.support-link { display:flex; align-items:center; gap:12px; font-size:1rem; }
+.donation-method h4 { display:flex; align-items:center; justify-content:center; gap:10px; font-size:1.15rem; }
+.footer p { font-size: 1rem; }
+.builds-grid, .modules-grid, .team-grid { align-items: stretch; }
+.build-content, .module-content { text-align: left; }
+.build-content p, .module-content p { margin-bottom: 14px; }
