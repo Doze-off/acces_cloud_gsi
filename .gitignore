@@ -1,2 +1,24 @@
+# Imagens e assets (opcional - se vocÊ¡ quiser versionar imagens)
+# comparatively grandes
+*.psd
+*.ai
+*.sketch
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor de texto
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
 .DS_Store
+Thumbs.db
+
+# Node (se vocÊ¡ adicionar dependencies no futuro)
 node_modules/
+package-lock.json
