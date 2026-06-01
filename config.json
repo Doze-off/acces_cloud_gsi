@@ -40,6 +40,21 @@
       "download_url": "https://github.com/seu-usuario/repo/releases/download/v2.0/build.zip",
       "image": "images/build2.jpg"
     }
+        {
+      "id": 3,
+      "name": {
+        "pt-BR": "AlphaDroid",
+        "en": "AlphaDroid"
+      },
+      "description": {
+        "pt-BR": "AlphaDroid construção estável",
+        "en": "AlphaDroid Build estable"
+      },
+      "version": "4.5",
+      "date": "2026-05-31",
+      "download_url": "https://github.com/Doze-off/Alphadroid_gsi/releases/tag/2026-05-31",
+      "image": "https://avatars.githubusercontent.com/u/121151445?s=200&v=4"
+    }
   ],
   "team": [
     {
