@@ -39,8 +39,8 @@
       "date": "2026-05-25",
       "download_url": "https://github.com/seu-usuario/repo/releases/download/v2.0/build.zip",
       "image": "images/build2.jpg"
-    }
-        {
+    },
+    {
       "id": 3,
       "name": {
         "pt-BR": "AlphaDroid",
