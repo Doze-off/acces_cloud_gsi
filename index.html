@@ -18,7 +18,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
 </head>
 <body>
-    <!-- Cursor Glow Effect (opcional) -->
+    <!-- Cursor Glow Effect -->
     <div class="cursor-glow" id="cursorGlow"></div>
 
     <!-- Header -->
@@ -39,6 +39,11 @@
         <div class="container">
             <h2 id="hero-title">Todas as minhas builds de jogos e projetos</h2>
             <p id="hero-subtitle">Encontre aqui todas as versões disponíveis para download</p>
+            <div class="total-downloads">
+                <i class="fas fa-download"></i>
+                <span id="total-downloads-count">0</span>
+                <span id="total-downloads-text">downloads totais</span>
+            </div>
         </div>
     </section>
 
@@ -52,12 +57,15 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section class="gallery-section">
+    <!-- Modules Section (NOVA) -->
+    <section class="modules-section">
         <div class="container">
-            <h2 class="section-title" id="gallery-title">Galeria de Imagens</h2>
-            <div id="gallery-container" class="gallery-grid">
-                <!-- Galeria será carregada via JavaScript -->
+            <h2 class="section-title" id="modules-title">Módulos</h2>
+            <p id="modules-description" class="section-description">
+                Módulos personalizados para expandir e melhorar suas builds
+            </p>
+            <div id="modules-container" class="modules-grid">
+                <!-- Módulos serão carregados via JavaScript -->
             </div>
         </div>
     </section>
