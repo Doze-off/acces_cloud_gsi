@@ -1,0 +1,150 @@
+{
+  "site": {
+    "title": {
+      "pt-BR": "Minhas Builds",
+      "en": "My Builds"
+    },
+    "description": {
+      "pt-BR": "Todas as minhas builds de jogos e projetos",
+      "en": "All my game builds and projects"
+    }
+  },
+  "builds": [
+    {
+      "id": 1,
+      "name": {
+        "pt-BR": "Build Alpha v1.0",
+        "en": "Alpha Build v1.0"
+      },
+      "description": {
+        "pt-BR": "Minha primeira build experimental com recursos básicos",
+        "en": "My first experimental build with basic features"
+      },
+      "version": "1.0.0",
+      "date": "2026-05-15",
+      "download_url": "https://github.com/seu-usuario/repo/releases/download/v1.0/build.zip",
+      "image": "images/build1.jpg"
+    },
+    {
+      "id": 2,
+      "name": {
+        "pt-BR": "Build Beta v2.0",
+        "en": "Beta Build v2.0"
+      },
+      "description": {
+        "pt-BR": "Build beta com novos recursos e melhorias de performance",
+        "en": "Beta build with new features and performance improvements"
+      },
+      "version": "2.0.0",
+      "date": "2026-05-25",
+      "download_url": "https://github.com/seu-usuario/repo/releases/download/v2.0/build.zip",
+      "image": "images/build2.jpg"
+    }
+  ],
+  "team": [
+    {
+      "name": {
+        "pt-BR": "Vinicius Sad",
+        "en": "Vinicius Sad"
+      },
+      "role": {
+        "pt-BR": "Desenvolvedor Principal",
+        "en": "Lead Developer"
+      },
+      "avatar": "images/team/vinicius.jpg",
+      "social": {
+        "github": "https://github.com/seu-usuario",
+        "twitter": "https://twitter.com/seu-usuario"
+      }
+    },
+    {
+      "name": {
+        "pt-BR": "Colaborador 2",
+        "en": "Contributor 2"
+      },
+      "role": {
+        "pt-BR": "Designer",
+        "en": "Designer"
+      },
+      "avatar": "images/team/member2.jpg",
+      "social": {
+        "github": "https://github.com/usuario2",
+        "twitter": ""
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "image": "images/gallery/screenshot1.jpg",
+      "caption": {
+        "pt-BR": "Captura de tela do jogo em gameplay",
+        "en": "Gameplay screenshot"
+      }
+    },
+    {
+      "image": "images/gallery/screenshot2.jpg",
+      "caption": {
+        "pt-BR": "Interface do usuário",
+        "en": "User interface"
+      }
+    },
+    {
+      "image": "images/gallery/screenshot3.jpg",
+      "caption": {
+        "pt-BR": "Menu principal",
+        "en": "Main menu"
+      }
+    }
+  ],
+  "donation": {
+    "title": {
+      "pt-BR": "Apoie o Projeto",
+      "en": "Support the Project"
+    },
+    "description": {
+      "pt-BR": "Se você gosta do meu trabalho, considere fazer uma doacao para ajudar no desenvolvimento contnuo!",
+      "en": "If you like my work, consider donating to help with continuous development!"
+    },
+    "methods": [
+      {
+        "name": "Pix",
+        "pt-BR": "Chave Pix: seu-email@exemplo.com",
+        "en": "Pix Key: your-email@example.com",
+        "icon": "pix"
+      },
+      {
+        "name": "PayPal",
+        "pt-BR": "Doar via PayPal",
+        "en": "Donate via PayPal",
+        "url": "https://paypal.me/seu-usuario",
+        "icon": "paypal"
+      },
+      {
+        "name": "PdU",
+        "pt-BR": "Catarse",
+        "en": "Catarse",
+        "url": "https://catarse.me/seu-projeto",
+        "icon": "catarse"
+      }
+    ]
+  },
+  "support": {
+    "title": {
+      "pt-BR": "Grupo de Suporte",
+      "en": "Support Group"
+    },
+    "description": {
+      "pt-BR": "Junte-se ao nosso grupo de suporte para tirar duvidas, compartilhar feedback e conversar com outros usuarios",
+      "en": "Join our support group to ask questions, share feedback, and chat with other users"
+    },
+    "discord": "https://discord.gg/seu-codigo",
+    "telegram": "https://t.me/seu-grupo",
+    "whatsapp": "https://chat.whatsapp.com/seu-codigo"
+  },
+  "footer": {
+    "text": {
+      "pt-BR": "Feito com ❤️ por Vinicius Sad | 2026",
+      "en": "Made with ❤️ by Vinicius Sad | 2026"
+    }
+  }
+}
