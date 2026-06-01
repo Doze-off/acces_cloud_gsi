@@ -103,7 +103,7 @@
       },
       "avatar": "images/team/vinicius.jpg",
       "social": {
-        "github": "https://github.com/SEU_USUARIO"
+        "github": "https://github.com/Doze-off"
       }
     }
   ],
@@ -121,9 +121,9 @@
     "discord": "https://discord.gg/seu-codigo"
   },
   "github": {
-    "owner": "SEU_USUARIO",
-    "repo": "SEU_REPOSITORIO",
-    "branch": "main",
+    "owner": "Doze-off",
+    "repo": "https://github.com/Doze-off/acces_cloud_gsi",
+    "branch": "16",
     "dataPath": "data.json"
   }
 }
