@@ -23,8 +23,7 @@
       "version": "1.0.0",
       "date": "2026-05-15",
       "download_url": "https://github.com/seu-usuario/repo/releases/download/v1.0/build.zip",
-      "image": "images/build1.jpg",
-      "downloads": 0
+      "image": "images/build1.jpg"
     },
     {
       "id": 2,
@@ -39,84 +38,7 @@
       "version": "2.0.0",
       "date": "2026-05-25",
       "download_url": "https://github.com/seu-usuario/repo/releases/download/v2.0/build.zip",
-      "image": "images/build2.jpg",
-    }
-  ],
-  "modulos": [
-    {
-      "id": 1,
-      "name": {
-        "pt-BR": "Módulo de Otimização",
-        "en": "Optimization Module"
-      },
-      "description": {
-        "pt-BR": "Melhora a performance do jogo em 40% com shaders otimizados",
-        "en": "Improves game performance by 40% with optimized shaders"
-      },
-      "version": "1.0.0",
-      "date": "2026-05-20",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/module1/optimization.zip",
-      "image": "images/modulos/modulo1.jpg",
-      "tags": {
-        "pt-BR": [
-          "Performance",
-          "Shaders"
-        ],
-        "en": [
-          "Performance",
-          "Shaders"
-        ]
-      }
-    },
-    {
-      "id": 2,
-      "name": {
-        "pt-BR": "Módulo de Texturas 4K",
-        "en": "4K Textures Module"
-      },
-      "description": {
-        "pt-BR": "Texturas ultra-realistas em 4K para gráficos incríveis",
-        "en": "Ultra-realistic 4K textures for amazing graphics"
-      },
-      "version": "2.0.0",
-      "date": "2026-05-28",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/module2/textures4k.zip",
-      "image": "images/modulos/modulo2.jpg",
-      "tags": {
-        "pt-BR": [
-          "Gráficos",
-          "4K"
-        ],
-        "en": [
-          "Graphics",
-          "4K"
-        ]
-      }
-    },
-    {
-      "id": 3,
-      "name": {
-        "pt-BR": "Módulo de Sons Surround",
-        "en": "Surround Sound Module"
-      },
-      "description": {
-        "pt-BR": "Áudio surround 7.1 imersivo para experiência completa",
-        "en": "Immersive 7.1 surround audio for complete experience"
-      },
-      "version": "1.5.0",
-      "date": "2026-05-30",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/module3/sounds.zip",
-      "image": "images/modulos/modulo3.jpg",
-      "tags": {
-        "pt-BR": [
-          "Áudio",
-          "Surround"
-        ],
-        "en": [
-          "Audio",
-          "Surround"
-        ]
-      }
+      "image": "images/build2.jpg"
     }
   ],
   "team": [
@@ -151,6 +73,29 @@
       }
     }
   ],
+  "gallery": [
+    {
+      "image": "images/gallery/screenshot1.jpg",
+      "caption": {
+        "pt-BR": "Captura de tela do jogo em gameplay",
+        "en": "Gameplay screenshot"
+      }
+    },
+    {
+      "image": "images/gallery/screenshot2.jpg",
+      "caption": {
+        "pt-BR": "Interface do usuário",
+        "en": "User interface"
+      }
+    },
+    {
+      "image": "images/gallery/screenshot3.jpg",
+      "caption": {
+        "pt-BR": "Menu principal",
+        "en": "Main menu"
+      }
+    }
+  ],
   "donation": {
     "title": {
       "pt-BR": "Apoie o Projeto",
@@ -175,7 +120,7 @@
         "icon": "paypal"
       },
       {
-        "name": "Catarse",
+        "name": "PdU",
         "pt-BR": "Catarse",
         "en": "Catarse",
         "url": "https://catarse.me/seu-projeto",
