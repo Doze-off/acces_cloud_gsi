@@ -26,21 +26,6 @@
       "image": "images/build1.jpg"
     },
     {
-      "id": 2,
-      "name": {
-        "pt-BR": "Build Beta v2.0",
-        "en": "Beta Build v2.0"
-      },
-      "description": {
-        "pt-BR": "Build beta com novos recursos e melhorias de performance",
-        "en": "Beta build with new features and performance improvements"
-      },
-      "version": "2.0.0",
-      "date": "2026-05-25",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/v2.0/build.zip",
-      "image": "images/build2.jpg"
-    },
-    {
       "id": 3,
       "name": {
         "pt-BR": "AlphaDroid",
