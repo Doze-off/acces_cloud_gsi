@@ -1,18 +1,18 @@
 {
   "site": {
     "title": {
-      "pt-BR": "Minhas Builds",
-      "en": "My Builds"
+      "pt-BR": "Acess Cloud GSI",
+      "en": "Acess Cloud GSI"
     },
     "description": {
-      "pt-BR": "Todas as minhas builds de jogos e projetos",
-      "en": "All my game builds and projects"
+      "pt-BR": "Todas as minhas builds e modulos",
+      "en": "All my builds and modules"
     }
   },
   "github": {
-    "owner": "SEU_USUARIO",
-    "repo": "SEU_REPOSITORIO",
-    "branch": "main",
+    "owner": "Doze-off",
+    "repo": "https://github.com/Doze-off/acces_cloud_gsi",
+    "branch": "16",
     "dataPath": "data.json"
   },
   "builds": [
@@ -102,8 +102,8 @@
   "team": [
     {
       "name": {
-        "pt-BR": "Vinicius Sad",
-        "en": "Vinicius Sad"
+        "pt-BR": "Doze-off",
+        "en": "Doze-off"
       },
       "role": {
         "pt-BR": "Desenvolvedor Principal",
@@ -111,7 +111,7 @@
       },
       "avatar": "images/team/vinicius.jpg",
       "social": {
-        "github": "https://github.com/SEU_USUARIO",
+        "github": "https://github.com/Doze-of",
         "twitter": ""
       }
     }
@@ -147,8 +147,8 @@
   },
   "footer": {
     "text": {
-      "pt-BR": "Feito com ❤️ por Vinicius Sad | 2026",
-      "en": "Made with ❤️ by Vinicius Sad | 2026"
+      "pt-BR": "Feito com ❤️ por Doze-of | 2026",
+      "en": "Made with ❤️ by Doze-of | 2026"
     }
   }
 }
