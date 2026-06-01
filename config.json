@@ -13,16 +13,16 @@
     {
       "id": 1,
       "name": {
-        "pt-BR": "Build Alpha v1.0",
-        "en": "Alpha Build v1.0"
+        "pt-BR": "AxionOS",
+        "en": "AxionOS"
       },
       "description": {
-        "pt-BR": "Minha primeira build experimental com recursos básicos",
-        "en": "My first experimental build with basic features"
+        "pt-BR": "O AxionOS é uma alternativa simplificada às interfaces personalizadas do Android oferecidas pelos fabricantes — desenvolvido para tornar seu dispositivo mais rápido, mais potente e mais confiável.",
+        "en": "AxionOS is a streamlined alternative to bloated manufacturer Android skins — built to make your device faster, more powerful, and more reliable"
       },
-      "version": "1.0.0",
-      "date": "2026-05-15",
-      "download_url": "https://github.com/seu-usuario/repo/releases/download/v1.0/build.zip",
+      "version": "2.7",
+      "date": "2026-05-31",
+      "download_url": "https://github.com/Doze-off/axion_aosp/releases/tag/2026-05-31",
       "image": "images/build1.jpg"
     },
     {
@@ -39,6 +39,21 @@
       "date": "2026-05-25",
       "download_url": "https://github.com/seu-usuario/repo/releases/download/v2.0/build.zip",
       "image": "images/build2.jpg"
+    },
+    {
+      "id": 3,
+      "name": {
+        "pt-BR": "AlphaDroid",
+        "en": "AlphaDroid"
+      },
+      "description": {
+        "pt-BR": "AlphaDroid construção estável",
+        "en": "AlphaDroid Build estable"
+      },
+      "version": "4.5",
+      "date": "2026-05-31",
+      "download_url": "https://github.com/Doze-off/Alphadroid_gsi/releases/tag/2026-05-31",
+      "image": "images/build3.jpg"
     }
   ],
   "team": [
