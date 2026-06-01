@@ -393,3 +393,195 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ===== Downloads persistentes (localStorage) =====
+function getStorageData() {
+    try {
+        return JSON.parse(localStorage.getItem('builds_site_data') || '{}') || {};
+    } catch {
+        return {};
+    }
+}
+
+function saveStorageData(data) {
+    localStorage.setItem('builds_site_data', JSON.stringify(data));
+}
+
+function getItemDownloads(key, fallback = 0) {
+    const data = getStorageData();
+    return Number(data[key]?.downloads ?? fallback);
+}
+
+function setItemDownloads(key, value) {
+    const data = getStorageData();
+    data[key] = data[key] || {};
+    data[key].downloads = value;
+    saveStorageData(data);
+}
+
+function getTotalDownloads() {
+    const data = getStorageData();
+    return Object.values(data).reduce((acc, item) => acc + Number(item.downloads || 0), 0);
+}
+
+function syncConfigDownloadsToStorage() {
+    if (config.builds) {
+        config.builds.forEach(b => {
+            const key = `build_${b.id}`;
+            const stored = getItemDownloads(key, b.downloads || 0);
+            b.downloads = stored;
+            setItemDownloads(key, stored);
+        });
+    }
+    if (config.modulos) {
+        config.modulos.forEach(m => {
+            const key = `module_${m.id}`;
+            const stored = getItemDownloads(key, m.downloads || 0);
+            m.downloads = stored;
+            setItemDownloads(key, stored);
+        });
+    }
+}
+
+function updateTotalDownloadsUI() {
+    const el = document.getElementById('total-downloads-count');
+    if (el) el.textContent = getTotalDownloads().toLocaleString(currentLang === 'pt-BR' ? 'pt-BR' : 'en-US');
+}
+
+// Atualizar textos extras por idioma
+const extraTranslations = {
+    'pt-BR': { 'total-downloads-text': 'downloads totais', 'modules-title': 'Módulos', 'modules-description': 'Módulos personalizados para expandir e melhorar suas builds' },
+    'en': { 'total-downloads-text': 'total downloads', 'modules-title': 'Modules', 'modules-description': 'Custom modules to expand and improve your builds' }
+};
+
+function updateExtraTexts() {
+    const t = extraTranslations[currentLang];
+    const totalTxt = document.getElementById('total-downloads-text');
+    const modTitle = document.getElementById('modules-title');
+    const modDesc = document.getElementById('modules-description');
+    if (totalTxt) totalTxt.textContent = t['total-downloads-text'];
+    if (modTitle) modTitle.textContent = t['modules-title'];
+    if (modDesc) modDesc.textContent = t['modules-description'];
+}
+
+// Sobrescrever updateLanguage para incluir extras
+const _oldUpdateLanguage = updateLanguage;
+updateLanguage = function() {
+    _oldUpdateLanguage();
+    updateExtraTexts();
+    updateTotalDownloadsUI();
+};
+
+// Carregar módulos
+function loadModules() {
+    const container = document.getElementById('modules-container');
+    if (!container) return;
+    if (!config.modulos || config.modulos.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:var(--text-secondary);">Nenhum módulo cadastrado no momento.</p>';
+        return;
+    }
+    container.innerHTML = '';
+    const t = translations[currentLang];
+
+    config.modulos.forEach((module, index) => {
+        const name = module.name[currentLang] || module.name['pt-BR'] || 'Módulo';
+        const description = module.description[currentLang] || module.description['pt-BR'] || '';
+        const image = module.image || 'https://via.placeholder.com/400x200/12121a/a855f7?text=Module';
+        const tags = (module.tags?.[currentLang] || module.tags?.['pt-BR'] || []).map(tag => `<span class="module-tag">${tag}</span>`).join('');
+        const downloads = Number(module.downloads || 0);
+
+        const card = document.createElement('div');
+        card.className = 'module-card';
+        card.style.animationDelay = `${index * 0.1}s`;
+        card.innerHTML = `
+            <img class="module-image" src="${image}" alt="${name}" onerror="this.src='https://via.placeholder.com/400x200/12121a/a855f7?text=Module'">
+            <div class="module-content">
+                <h3>${name}</h3>
+                <p>${description}</p>
+                <div class="module-tags">${tags}</div>
+                <div class="module-downloads"><i class="fas fa-download"></i> <span id="module-downloads-${module.id}">${downloads.toLocaleString(currentLang === 'pt-BR' ? 'pt-BR' : 'en-US')}</span></div>
+                <a href="${module.download_url || '#'}" class="download-btn" target="_blank" rel="noopener" data-type="module" data-id="${module.id}">
+                    <i class="fas fa-download"></i> ${t['download']}
+                </a>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+}
+
+// Atualizar cards de download e persistir
+function attachDownloadCounters() {
+    document.querySelectorAll('.download-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const type = btn.dataset.type;
+            const id = btn.dataset.id;
+            if (!type || !id) return;
+            const prefix = type === 'module' ? 'module_' : 'build_';
+            const key = `${prefix}${id}`;
+            const data = getStorageData();
+            const current = Number(data[key]?.downloads || 0) + 1;
+            data[key] = { downloads: current };
+            saveStorageData(data);
+
+            const counterId = type === 'module' ? `module-downloads-${id}` : `build-downloads-${id}`;
+            const el = document.getElementById(counterId);
+            if (el) el.textContent = current.toLocaleString(currentLang === 'pt-BR' ? 'pt-BR' : 'en-US');
+
+            updateTotalDownloadsUI();
+        });
+    });
+}
+
+// Sobrescrever loadBuilds para mostrar contador
+const _oldLoadBuilds = loadBuilds;
+loadBuilds = function() {
+    const container = document.getElementById('builds-container');
+    if (!config.builds || config.builds.length === 0) {
+        container.innerHTML = '<p style="text-align: center; color: var(--text-secondary); font-size: 1.1rem;">Nenhuma build disponível no momento.</p>';
+        return;
+    }
+    container.innerHTML = '';
+    const t = translations[currentLang];
+    config.builds.forEach((build, index) => {
+        const name = build.name[currentLang] || build.name['pt-BR'] || 'Build';
+        const description = build.description[currentLang] || build.description['pt-BR'] || '';
+        const date = build.date || 'N/A';
+        const image = build.image || 'https://via.placeholder.com/400x220/12121a/a855f7?text=Build+Image';
+        const version = build.version || '1.0.0';
+        const downloads = Number(build.downloads || 0);
+        const card = document.createElement('div');
+        card.className = 'build-card';
+        card.style.animationDelay = `${index * 0.1}s`;
+        card.innerHTML = `
+            <img src="${image}" alt="${name}" class="build-image" onerror="this.src='https://via.placeholder.com/400x220/12121a/a855f7?text=Build+Image'">
+            <div class="build-content">
+                <h3>${name}</h3>
+                <span class="build-version">v${version}</span>
+                <p>${description}</p>
+                <p class="build-date"><i class="far fa-calendar"></i> ${formatDate(date)}</p>
+                <div class="module-downloads"><i class="fas fa-download"></i> <span id="build-downloads-${build.id}">${downloads.toLocaleString(currentLang === 'pt-BR' ? 'pt-BR' : 'en-US')}</span></div>
+                <a href="${build.download_url || '#'}" class="download-btn" target="_blank" rel="noopener" data-type="build" data-id="${build.id}">
+                    <i class="fas fa-download"></i> ${t['download']}
+                </a>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+    attachDownloadCounters();
+};
+
+// Sobrescrever initializeSite para módulos e contadores
+const _oldInitializeSite = initializeSite;
+initializeSite = function() {
+    updateLanguage();
+    syncConfigDownloadsToStorage();
+    loadBuilds();
+    loadModules();
+    loadTeam();
+    loadDonation();
+    loadSupport();
+    updateTotalDownloadsUI();
+    initCursorGlow();
+    initHeaderScroll();
+    initScrollAnimations();
+};
